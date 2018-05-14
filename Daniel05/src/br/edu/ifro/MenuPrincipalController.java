@@ -38,19 +38,8 @@ public class MenuPrincipalController implements Initializable {
     private Button bntSoma;
     @FXML
     private MenuItem AbrirCadastrosAlunos;
-    try{
-            FXMLLoader fxmlLoader = new FXMLLoader();
-    fxmlLoader.setLocation(getClass().getResource("Cliente.fxml"));
-            Scene scene = new Scene(fxmlLoader.load(),900,682);
-            Stage stage = new Stage();
-    stage.setTitle("Cadastrar Cliente");
-    stage.setScene(scene);
-    stage.show();
-}
-catch(IOException e){
+   
 
-}
-    
     @FXML
     private MenuItem FecharProjeto;
           
@@ -67,5 +56,34 @@ catch(IOException e){
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
     }    
+
+    @FXML
+    private void num1(ActionEvent event) {
+    }
+
+    @FXML
+    private void num2(ActionEvent event) {
+    }
+
+    @FXML
+    private void result(ActionEvent event) {
+    }
+
+    @FXML
+    private void alunos(ActionEvent event) {
+         try{
+            FXMLLoader fxmlLoader = new FXMLLoader();
+    fxmlLoader.setLocation(getClass().getResource("Aluno.fxml"));
+            Scene scene = new Scene(fxmlLoader.load(),900,682);
+            Stage stage = new Stage();
+    stage.setTitle("Cadastrar Aluno");
+    stage.setScene(scene);
+    stage.show();
+}
+catch (IOException e){
+
+}
+  
+    }
     
 }

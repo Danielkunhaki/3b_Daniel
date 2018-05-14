@@ -10,9 +10,9 @@
 <AnchorPane id="AnchorPane" prefHeight="309.0" prefWidth="461.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifro.MenuPrincipalController">
     <children>
         <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
-      <TextField fx:id="txtnumero1" layoutX="23.0" layoutY="64.0" />
-      <TextField fx:id="txtnumero2" layoutX="23.0" layoutY="137.0" />
-      <TextField fx:id="txtResultado" layoutX="23.0" layoutY="208.0" onAction="#soma" />
+      <TextField fx:id="txtnumero1" layoutX="23.0" layoutY="64.0" onAction="#num1" />
+      <TextField fx:id="txtnumero2" layoutX="23.0" layoutY="137.0" onAction="#num2" />
+      <TextField fx:id="txtResultado" layoutX="23.0" layoutY="208.0" onAction="#result" />
       <Label layoutX="23.0" layoutY="47.0" />
       <Label layoutX="23.0" layoutY="122.0" text="numero2" />
       <Label layoutX="23.0" layoutY="191.0" text="Resultado" />
@@ -22,7 +22,7 @@
         <menus>
           <Menu mnemonicParsing="false" text="Cadastros">
             <items>
-              <MenuItem fx:id="AbrirCadastrosAlunos" mnemonicParsing="false" text="Alunos" />
+              <MenuItem fx:id="AbrirCadastrosAlunos" mnemonicParsing="false" onAction="#alunos" text="Alunos" />
                   <MenuItem fx:id="FecharProjeto" mnemonicParsing="false" text="Fechar" />
             </items>
           </Menu>
